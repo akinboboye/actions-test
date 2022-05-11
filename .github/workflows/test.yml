@@ -8,3 +8,10 @@ jobs:
     steps:
       - name: echo a string
         run: echo "first workflow"
+      - name: multi line job
+        run: |
+          node -v
+          python3 --version
+          pip --version
+          echo "working directory"
+          pwd
