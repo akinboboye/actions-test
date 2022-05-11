@@ -1,17 +1,10 @@
-name: test-job
+name: test workflow
 
 on: [push]
 
 jobs:
-  test:
+  job-1:
     runs-on: ubuntu-latest
     steps:
-      - name: echo a string
-        run: echo "first workflow"
-      - name: multi line job
-        run: |
-          node -v
-          python3 --version
-          pip --version
-          echo "working directory"
-          pwd
+      - name: step 1
+        run: echo "hi buddy"
